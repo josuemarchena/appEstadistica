@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Estadística</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="estilo.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Estadística</title>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<input type="checkbox" checked="checked"/>
+<div class="stage">
+  <div class="light"></div>
+</div>
+<block class="egg-wrapper">
+  <div class="shadow">
+    <div class="main"></div>
+    <div class="secondary"></div>
+  </div>
+  <div class="egg">
+    <div class="fill"></div>
+    <div class="shading"></div>
+    <div class="key"></div>
+    <div class="highlight"></div>
+    <div class="egg-shadow"></div>
+  </div>
+  <div class="egg-wrapper rotate">
+    <div class="egg">
+      <div class="fill"></div>
+      <div class="shading"></div>
+      <div class="key"></div>
+      <div class="highlight"></div>
+      <div class="egg-shadow"></div>
+    </div>
+  </div>
+</block>
+<block class="egg-wrapper">
+  <div class="shadow">
+    <div class="main"></div>
+    <div class="secondary"></div>
+  </div>
+  <div class="egg">
+    <div class="fill"></div>
+    <div class="shading"></div>
+    <div class="key"></div>
+    <div class="highlight"></div>
+    <div class="egg-shadow"></div>
+  </div>
+  <div class="egg-wrapper rotate">
+    <div class="egg">
+      <div class="fill"></div>
+      <div class="shading"></div>
+      <div class="key"></div>
+      <div class="highlight"></div>
+      <div class="egg-shadow"></div>
+    </div>
+  </div>
+</block>
+<block class="egg-wrapper">
+  <div class="shadow">
+    <div class="main"></div>
+    <div class="secondary"></div>
+  </div>
+  <div class="egg">
+    <div class="fill"></div>
+    <div class="shading"></div>
+    <div class="key"></div>
+    <div class="highlight"></div>
+    <div class="egg-shadow"></div>
+  </div>
+  <div class="egg-wrapper rotate">
+    <div class="egg">
+      <div class="fill"></div>
+      <div class="shading"></div>
+      <div class="key"></div>
+      <div class="highlight"></div>
+      <div class="egg-shadow"></div>
+    </div>
+  </div>
+</block>
+<!--div class="title"></div-->
+<!-- partial -->
+<main style="z-index: 1000;">
+  <div class="container" style="margin-top: 3%">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Diferencia entre medias</h1>
+        <hr />
+        <p>
+          Por favor ingrese el valor de la media de producción de huevos de
+          dos países para calcular la diferencia entre estas, con una
+          confianza del 95%. Recuerde que los países y el año deben ser
+          distintos.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="row col-sm-12">
+      <div class="col-sm-6">
+        <p class="lead">País A</p>
+        <div class="row">
+          <select id="primerPais" name="primerPais" class="form-control" onchange="comprobar()">
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Honduras">Honduras</option>
+            <option value="México">México</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Panamá">Panamá</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Perú">Perú</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="República Dominicana">República Dominicana</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+        <div class="row">
+          <select id="anno1" name="anno1" class="form-control">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+        </div>
+        <div class="row">
+          <input type="number" name="media1" id="media1" class="form-control" placeholder="Ingrese la media" />
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-6">
+        <p class="lead">País B</p>
+        <div class="row">
+          <select id="segundoPais"  class="form-control" name="segundoPais" onchange="comprobar()">
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Honduras">Honduras</option>
+            <option value="México">México</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Panamá">Panamá</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Perú">Perú</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="República Dominicana">República Dominicana</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+        <div class="row">
+        <select id="anno2"  class="form-control" name="anno2">
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+        </select>
+        </div>
+        <div class="row">
+          <input type="number"  class="form-control" name="media2" id="media2" placeholder="Ingrese la media" />
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-success" onclick="calculo()" id="botonCal">
+          Calcular
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <br />
+      <div class="col-sm-12">
+        <p id="respuesta"></p>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  function calculo() {
+    if ($("#media1").val() == "" && $("#media2").val() == "") {
+      alert("Por favor ingrese el valor de las medias");
+      return;
+    }
+
+    if ($("#media1").val() == "") {
+      alert("Por favor ingrese el valor de la primera media");
+      return;
+    }
+
+    if ($("#media2").val() == "") {
+      alert("Por favor ingrese el valor de la segunda media");
+      return;
+    }
+
+    var resultado1 = 0;
+    var resultado2 = 0;
+    var pais1 = $("select[id=primerPais]").val();
+    var pais2 = $("select[id=segundoPais]").val();
+    var anno1 = $("select[id=anno1]").val();
+    var anno2 = $("select[id=anno2]").val();
+    var media1 = Number.parseFloat($("#media1").val());
+    var media2 = Number.parseFloat($("#media2").val());
+    var z = 1.96;
+    var n = 20;
+    var x = (media1 + media2) / 2;
+    var desv = Math.sqrt(
+      (Math.pow(media1 - x, 2) + Math.pow(media2 - x, 2)) / 2
+    );
+    resultado1 =
+      Math.abs(media1 - media2) -
+      z * Math.sqrt(Math.pow(desv, 2) / n + Math.pow(desv, 2) / n);
+    resultado2 =
+      Math.abs(media1 - media2) +
+      z * Math.sqrt(Math.pow(desv, 2) / n + Math.pow(desv, 2) / n);
+
+    $("#respuesta").html(
+      "Tomando en cuenta la media de producción de huevos en " +
+      pais1 +
+      " durante el año " +
+      anno1 +
+      " y la media de producción de huevos en " +
+      pais2 +
+      " durante el año " +
+      anno2 +
+      " con un nivel de confianza del 95% la diferencia de las medias distan entre " +
+      //Number.parseFloat(resultado1).toLocaleString(
+      // window.document.documentElement.lang) +
+      resultado1.toFixed(4) +
+      " a " +
+      resultado2.toFixed(4)
+    );
+  }
+
+  function comprobar() {
+    var pais1 = $("select[id=primerPais]").val();
+    var pais2 = $("select[id=segundoPais]").val();
+
+    if (pais1 == pais2) {
+      alert("Los países no pueden ser iguales");
+      $("#botonCal").attr("disabled", true);
+    } else {
+      $("#botonCal").attr("disabled", false);
+    }
+  }
+
+  $(document).ready(function () {
+    var pais1 = "";
+    var pais2 = "";
+    $("#primerPais").change(function () {
+      pais1 += $("select[id=primerPais]").val();
+    });
+    $("#segundoPais").change(function () {
+      pais2 += $("select[id=segundoPais]").val();
+    });
+    if (pais1 == pais2) {
+      $("#botonCal").attr("disabled", true);
+    }
+  });
+
+  /*
+  $("#valor2").val(pais2);
+  */
+</script>
+</body>
+</html>

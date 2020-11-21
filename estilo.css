@@ -1,0 +1,39 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(37, 37, 41) 35%,
+    rgb(61, 59, 59) 100%
+  );
+}
+
+
+
+/*body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  align-self: flex-end;
+}*/
